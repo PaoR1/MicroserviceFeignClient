@@ -4,6 +4,8 @@ import com.globant.feign.client.application.port.input.RetrieveUserInputPort;
 import com.globant.feign.client.domain.model.User;
 import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -18,7 +20,8 @@ public class UserController {
     private RetrieveUserInputPort retrieveUserInputPort;
 
     @GetMapping("/{id}")
-    public User getUsuario(@PathVariable("id") Long id) {
-        return retrieveUserInputPort.retrieveUserById(id);
+    public ResponseEntity<User> getUsuario(@PathVariable("id") Long id) {
+        User response = retrieveUserInputPort.retrieveUserById(id);
+        return ResponseEntity.status(HttpStatus.OK).body(response);
     }
 }

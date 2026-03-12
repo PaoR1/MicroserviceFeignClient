@@ -13,8 +13,4 @@ public class UserClientConfiguration {
         return Logger.Level.FULL;
     }
 
-    @Bean
-    Request.Options options() {
-        return new Request.Options(5000, 30000); // Configurable connect/read timeouts
-    }
 }
