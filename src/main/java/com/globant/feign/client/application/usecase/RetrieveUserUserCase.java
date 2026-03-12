@@ -1,8 +1,8 @@
-package com.globant.feignclient.application.usecase;
+package com.globant.feign.client.application.usecase;
 
-import com.globant.feignclient.application.port.input.RetrieveUserInputPort;
-import com.globant.feignclient.application.port.output.RetrieveUserOutputPort;
-import com.globant.feignclient.domain.model.User;
+import com.globant.feign.client.application.port.input.RetrieveUserInputPort;
+import com.globant.feign.client.application.port.output.RetrieveUserOutputPort;
+import com.globant.feign.client.domain.model.User;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

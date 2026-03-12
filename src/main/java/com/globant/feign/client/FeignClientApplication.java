@@ -1,11 +1,11 @@
-package com.globant.feignclient;
+package com.globant.feign.client;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.openfeign.EnableFeignClients;
 
 @SpringBootApplication
-@EnableFeignClients(basePackages = "com.globant.feignclient")
+@EnableFeignClients(basePackages = "com.globant.feign.client.infrastructure.adapter.output.calluser.client")
 public class FeignClientApplication {
 
     public static void main(String[] args) {

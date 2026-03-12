@@ -1,10 +1,10 @@
-package com.globant.feignclient.infrastructure.adapter;
+package com.globant.feign.client.infrastructure.adapter;
 
-import com.globant.feignclient.application.port.output.RetrieveUserOutputPort;
-import com.globant.feignclient.domain.model.User;
-import com.globant.feignclient.infrastructure.adapter.client.UserClient;
-import com.globant.feignclient.infrastructure.adapter.mapper.UserMapper;
-import com.globant.feignclient.infrastructure.adapter.output.callapi.dto.response.UserDto;
+import com.globant.feign.client.application.port.output.RetrieveUserOutputPort;
+import com.globant.feign.client.domain.model.User;
+import com.globant.feign.client.infrastructure.adapter.output.calluser.client.UserClient;
+import com.globant.feign.client.infrastructure.adapter.mapper.UserMapper;
+import com.globant.feign.client.infrastructure.adapter.output.calluser.dto.response.UserDto;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
