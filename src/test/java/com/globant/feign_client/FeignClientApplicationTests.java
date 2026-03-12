@@ -2,10 +2,8 @@ package com.globant.feign.client; // Update package to match main app's package
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.cloud.openfeign.EnableFeignClients;
 
-@SpringBootTest(classes = FeignClientApplication.class) // Explicitly reference the main app class
-@EnableFeignClients
+@SpringBootTest(classes = FeignClientApplication.class)
 class FeignClientApplicationTests {
 
     @Test

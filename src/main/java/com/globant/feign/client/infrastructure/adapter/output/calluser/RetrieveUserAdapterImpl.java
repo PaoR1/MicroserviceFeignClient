@@ -1,4 +1,4 @@
-package com.globant.feign.client.infrastructure.adapter;
+package com.globant.feign.client.infrastructure.adapter.output.calluser;
 
 import com.globant.feign.client.application.port.output.RetrieveUserOutputPort;
 import com.globant.feign.client.domain.model.User;
